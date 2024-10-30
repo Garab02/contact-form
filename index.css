@@ -1,0 +1,179 @@
+body {
+    background-color: rgb(209, 230, 222);
+    color: rgb(26, 110, 82);
+    font-family: karla;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50Px;
+    
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    
+    
+}
+
+form {
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 0px;
+    padding: 20px;
+    width: 100%;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fname, .lname {
+    display: flex;
+    flex-direction: column;
+    width: 100%;    
+}
+.radios {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px;
+}
+
+.radio {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid;
+    border-radius: 5px; 
+    align-items: center;
+    width: 100%;
+    margin: 5px;
+    
+}
+.message {
+    display: flex;
+    flex-direction: column;
+}
+.message > input {
+    border: 1px solid rgb(3, 85, 3);
+    height: 100px;
+    border-radius: 5px;
+}
+
+input {
+    border: 1px solid rgb(3, 85, 3);
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.submit {
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: white;
+    height: 40px;
+}
+
+.submit:hover {
+    background-color: rgb(25, 90, 25);
+}
+
+span {
+    font-size: 0.7em;
+    margin-left: 10px;
+}
+
+
+.success {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgb(15, 65, 15);
+    color: white;
+    height: 100px;
+    width: 350px;
+    font-size: 0.5em;
+}
+
+
+@media only screen and (max-width:375px){
+    body {
+        width:100%;
+       padding-top: 0px;
+    }
+    
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; 
+        width: 80%;
+     
+    }
+    .form {
+        margin: 10px;
+    }
+    
+    .name {
+        display: flex;
+        flex-direction: column;
+        
+    }
+   
+    .radios {
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-left: 0px;
+        margin-right: 15px;
+        
+        
+    }
+    .radio {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid;
+        border-radius: 5px;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0px;
+        margin-top: 5px;      
+    }
+    .message {
+        display: flex;
+        flex-direction: column;
+    }
+    .message > input {
+        border: 1px solid rgb(3, 85, 3);
+        height: 100px;
+        border-radius: 5px;
+       
+    }
+   
+   
+
+}
